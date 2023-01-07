@@ -40,7 +40,7 @@ Hello all! This is my first tutorial! To begin we will have to create a Virtual 
 </p>
 <p>Next simply connect to your newly created VM using RDP using the public IPv4 address. If you are a Mac user you will have to download Microsoft RDP. As you can see in this example I am a mac user. 
 </p>
-<img src="https://i.imgur.com/Nb6Pfzs.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/FXpfunz.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 
