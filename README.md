@@ -47,25 +47,34 @@ Hello all! This is my first tutorial! To begin we will have to create a Virtual 
 <p>
 </p>
 <p>
-So now that you are connected to your VM you will have to enable IIS. Simply access the control panel then select uninstall a program. On the left you will see "Turn windows features on or off", click on that. A list will appear then you will enable Internet Information Services.
+So now that you are connected to your VM you will have to enable IIS. Simply access the control panel then select uninstall a program. On the left you will see "Turn windows features on or off", click on that. A list will appear then you will enable Internet Information Services. After enabling IIS, go to world wide web services, then application development and enable CGI.
 </p>  
 <img src="https://i.imgur.com/qtEnuWu.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/W2JkJZw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 </p>
 <p>
-Now that you have enabled IIS we need to install the Web Platform Installer. I will provide a link here: https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
-  This link will provide you with all of the material you will need to download to get osTicket up and running. Simply click the link and install the Web Platform Installer
+Now that you have enabled IIS we need to install the PHP Manager for IIS, and then after that install the Rewrite module
 </p>
-<img src="https://i.imgur.com/AxHCfQ6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>  
-</p>
-<p>
-Once you have installed the Web Installer Platform, open it. From inside the application you are going to install MySQL 5.5 and afterwards install x86 version of PHP up until 7.3. There will be some failed files such as C++ redistributable package, as well as PHP 7.3.8, and PHP Manager for IIS, those files can be found with the install link.
-</p>
-<img src="https://i.imgur.com/JJ8bZeJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<p>
+<img src="https://imgur.com/x3JOQPA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/b7gQiPG.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+Next after that is completed lets create a C file and name it PHP, and from there go to the installation files and download PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) and unzip the contents of that into the C file, C:\PHP
+</p>
+<img src="https://imgur.com/IkOqZjZ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p>
+</p>
+<p>
+Now you will want to download MySQL 5.5.62, open it as Typical setup, launch the configuration wizard, set up standard configuration and set the password as "Password1" After thats completed, open IIS as adminastrator, and register PHP from inside IIS, once done re-open IIS and stop, start the server.
+</p>
+<img src="https://imgur.com/6gA3Rur.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>  
+</p>
+<br />
+<p>
+</p>
+<p>  
 Next you want to download osTicket. Then extract and copy the "upload" folder into c:\inetpub\wwwroot. Afterwards rename the folder to osTicket
 </P>
 <img src="https://i.imgur.com/TUGiSKi.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -98,7 +107,7 @@ New Permissions->Everyone->all
 <p>
 </p>
 <p>
-Finish setting up osTicket in the browser (click continue) then you will name the Helpdesk to your liking. Select a default email that will receive emails from customers who submit tickets. 
+Finish setting up osTicket in the browser (click continue) then you will name the Helpdesk to your liking. Select a default email that will receive emails from customers who submit tickets. Then from the installation files install HeidiSQL, open HeidiSQL, create a new session user us root, password is Password1, connect to the session, and create a database called "osTicket"
 </p>
 <img src="https://i.imgur.com/RmVk3q5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
